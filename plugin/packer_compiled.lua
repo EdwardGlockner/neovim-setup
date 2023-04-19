@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["focus.nvim"] = {
+    config = { "\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nfocus\frequire\0" },
+    loaded = true,
+    path = "/Users/edwardglockner/.local/share/nvim/site/pack/packer/start/focus.nvim",
+    url = "https://github.com/beauwilliams/focus.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/Users/edwardglockner/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -117,6 +123,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: focus.nvim
+time([[Config for focus.nvim]], true)
+try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nfocus\frequire\0", "config", "focus.nvim")
+time([[Config for focus.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
